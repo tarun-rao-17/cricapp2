@@ -7,7 +7,6 @@ import white_arrow from "../../assets/white-arrow.png";
 import msg_icon from "../../assets/msg-icon.png";
 
 const Contact = () => {
-
   const [result, setResult] = React.useState("");
 
 
@@ -20,7 +19,7 @@ const Contact = () => {
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
+      body: formData,
     });
 
     const data = await response.json();
@@ -33,7 +32,6 @@ const Contact = () => {
       setResult(data.message);
     }
   };
-
 
   return (
     <div className="contact" id="contact">
@@ -65,7 +63,7 @@ const Contact = () => {
         </ul>
       </div>
       <div className="contact-col">
-      <form onSubmit={onSubmit} >
+        <form onSubmit={onSubmit}>
           <label htmlFor="">Your Name</label>
           <input
             type="text"

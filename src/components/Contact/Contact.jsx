@@ -10,6 +10,7 @@ const Contact = () => {
 
   const [result, setResult] = React.useState("");
 
+
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
@@ -84,7 +85,7 @@ const Contact = () => {
           <textarea
             name="message"
             rows="6"
-            placeholder="Enter Your Message"
+            placeholder="Please Enter Your Message"
             required
           ></textarea>
           <button type="submit" className="btn dark-btn">

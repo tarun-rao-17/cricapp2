@@ -77,7 +77,7 @@ const Contact = () => {
           <input
             type="tel"
             name="phone"
-            placeholder="Enter Your Phone N0."
+            placeholder="Enter Your Phone Number."
             required
           />
           <label htmlFor="">Message</label>
